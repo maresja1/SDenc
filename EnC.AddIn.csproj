@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectGuid>{BE99CBC7-1512-4AD0-8001-AF337658F120}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <OutputType>Library</OutputType>
+    <RootNamespace>EnC</RootNamespace>
+    <AssemblyName>EnC.AddIn</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+    <NoStdLib>False</NoStdLib>
+    <WarningLevel>4</WarningLevel>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <SignAssembly>False</SignAssembly>
+    <DelaySign>False</DelaySign>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <SourceAnalysisOverrideSettingsFile>C:\Users\Honza\AppData\Roaming\ICSharpCode/SharpDevelop4.0\Settings.SourceAnalysis</SourceAnalysisOverrideSettingsFile>
+    <RunCodeAnalysis>False</RunCodeAnalysis>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <RegisterForComInterop>False</RegisterForComInterop>
+    <GenerateSerializationAssemblies>Auto</GenerateSerializationAssemblies>
+    <BaseAddress>4194304</BaseAddress>
+    <FileAlignment>4096</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>..\..\..\AddIns\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <Optimize>False</Optimize>
+    <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <StartAction>Program</StartAction>
+    <StartProgram>..\..\..\bin\SharpDevelop.exe</StartProgram>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>False</DebugSymbols>
+    <DebugType>None</DebugType>
+    <Optimize>True</Optimize>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+    <DefineConstants>TRACE</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CSharpBinding">
+      <HintPath>..\..\..\AddIns\BackendBindings\CSharpBinding\CSharpBinding.dll</HintPath>
+    </Reference>
+    <Reference Include="Debugger.AddIn">
+      <HintPath>..\..\..\AddIns\Debugger\Debugger.AddIn.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="ICSharpCode.Core">
+      <HintPath>..\..\..\bin\ICSharpCode.Core.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="ICSharpCode.SharpDevelop">
+      <HintPath>..\..\..\bin\ICSharpCode.SharpDevelop.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="ICSharpCode.SharpDevelop.Dom">
+      <HintPath>..\..\..\bin\ICSharpCode.SharpDevelop.Dom.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Mono.Cecil">
+      <HintPath>..\..\..\..\..\Skola\aktual\rocnikovy_projekt\workspace\jbevain-cecil-0ed6180\bin\Debug\Mono.Cecil.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="ClassDiagram1.cd" />
+    <None Include="EnC.AddIn.addin">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DeltaBuilder.cs" />
+    <Compile Include="DeltaSymbols\SequencePoint.cs" />
+    <Compile Include="EditorEvents\BodyChangeHistory.cs" />
+    <Compile Include="EditorEvents\LineOffsetConverter.cs" />
+    <Compile Include="EditorEvents\MemberComparator.cs" />
+    <Compile Include="EditorEvents\SourceChangeValidator.cs" />
+    <Compile Include="FunctionRemapper.cs" />
+    <Compile Include="LocalVarDiff.cs" />
+    <Compile Include="MetaData\SytemTypeReferenceGetter.cs" />
+    <Compile Include="MetaData\TranslatingExceptions.cs" />
+    <Compile Include="MethodTranslator.cs" />
+    <Compile Include="DeltaSymbols\CorMemStream.cs" />
+    <Compile Include="DeltaSymbols\SymbolWriter.cs" />
+    <Compile Include="EditorEvents\EditorEvent.cs" />
+    <Compile Include="EditorEvents\EditorEventCreator.cs" />
+    <Compile Include="EditorEvents\ProjectContentCopy.cs" />
+    <Compile Include="EditorEvents\SourceChange.cs" />
+    <Compile Include="EnCStarter.cs" />
+    <Compile Include="EnCManager.cs" />
+    <Compile Include="MetaData\IMetaDataDispenser.cs" />
+    <Compile Include="MetaData\IMetaDataEmit.cs" />
+    <Compile Include="MetaData\IMetaDataImport.cs" />
+    <Compile Include="MetaData\ITokenTranslator.cs" />
+    <Compile Include="MetaData\MetaDataEmitter.cs" />
+    <Compile Include="MetaData\MetaDataImporter.cs" />
+    <Compile Include="MetaData\MetaDataManager.cs" />
+    <Compile Include="MetaData\Signature.cs" />
+    <Compile Include="ResourceManager.cs" />
+    <Compile Include="SequencePointRemapper.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Debugger\Debugger.Core\Debugger.Core.csproj">
+      <Project>{1D18D788-F7EE-4585-A23B-34DC8EC63CB8}</Project>
+      <Name>Debugger.Core</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.Targets" />
+</Project>

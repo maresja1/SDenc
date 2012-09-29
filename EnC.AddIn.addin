@@ -1,0 +1,19 @@
+﻿<AddIn name="EnC"
+       author="Jan Mareš"
+       copyright="prj:///doc/copyright.txt"
+       description="SharpDevelop ENC debugger extension"
+       addInManagerHidden = "preinstalled">
+	
+	<Manifest>
+		<Identity name = "ICSharpCode.Debugger.EnC"/>
+        <Dependency addin="ICSharpCode.Debugger" requirePreload = "true"/>
+	</Manifest>
+	
+	<Runtime>
+		<Import assembly="EnC.AddIn.dll" />
+	</Runtime>	
+	
+	<Path name = "/Workspace/Autostart">
+		<Class id="EnC.EnCStarter" class="EnC.EnCStarter" />
+	</Path>
+</AddIn>

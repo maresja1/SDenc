@@ -1,0 +1,26 @@
+var searchData=
+[
+  ['changemethod',['ChangeMethod',['../class_en_c_1_1_delta_builder.html#a301fb2dc9308e65e08a0350359dd9a6b',1,'EnC::DeltaBuilder']]],
+  ['changeproperty',['ChangeProperty',['../class_en_c_1_1_delta_builder.html#a82252957c1964050627d7d8af1ee4680',1,'EnC::DeltaBuilder']]],
+  ['changingevent',['changingEvent',['../class_en_c_1_1_editor_events_1_1_editor_event_creator.html#a00e86ad4c1a70ed5829f35f44a80caa8',1,'EnC::EditorEvents::EditorEventCreator']]],
+  ['checksignature',['checkSignature',['../class_en_c_1_1_meta_data_1_1_meta_data_importer.html#a03f42cf009c39c8995a11a4e4f8933d5',1,'EnC::MetaData::MetaDataImporter']]],
+  ['clearlocalvarcache',['ClearLocalVarCache',['../class_en_c_1_1_local_var_diff.html#a4f47b03796cdfee6eebf764c091dce41',1,'EnC::LocalVarDiff']]],
+  ['cleartokencache',['ClearTokenCache',['../class_en_c_1_1_meta_data_1_1_meta_data_manager.html#a0bdad11d6b7396378191cb5a2e6c5867',1,'EnC::MetaData::MetaDataManager']]],
+  ['clone',['Clone',['../class_en_c_1_1_cor_mem_stream.html#a3bc2305349c01c303e80f15c3284a91d',1,'EnC::CorMemStream']]],
+  ['close',['Close',['../class_en_c_1_1_delta_symbols_1_1_symbol_writer_class.html#a118a93ae61aca5927edef44e254d4938',1,'EnC::DeltaSymbols::SymbolWriterClass']]],
+  ['closeenum',['CloseEnum',['../interface_en_c_1_1_meta_data_1_1_i_meta_data_import.html#a76e71326b8a6d1d8a1e012dbc21b6250',1,'EnC::MetaData::IMetaDataImport']]],
+  ['cocreateinstance',['CoCreateInstance',['../class_en_c_1_1_meta_data_1_1_native_methods.html#a6651dd87ab22384392b8ed8d89da6c44',1,'EnC::MetaData::NativeMethods']]],
+  ['commit',['Commit',['../class_en_c_1_1_cor_mem_stream.html#a9c90e80789b4f8011e33ae8046bcc84a',1,'EnC::CorMemStream']]],
+  ['compress',['Compress',['../class_en_c_1_1_meta_data_1_1_signature.html#a463db1eafbd0be57ff55a6dca1d5e205',1,'EnC::MetaData::Signature']]],
+  ['copyclass',['copyClass',['../class_en_c_1_1_editor_events_1_1_project_content_copy.html#aaf0cdf54be685bec68763a0c3136a009',1,'EnC::EditorEvents::ProjectContentCopy']]],
+  ['copyfields',['copyFields',['../class_en_c_1_1_editor_events_1_1_project_content_copy.html#ae4420426d537d60f567f32430aa3b7b0',1,'EnC::EditorEvents::ProjectContentCopy']]],
+  ['copyfromstream',['CopyFromStream',['../class_en_c_1_1_cor_mem_stream.html#a460228116f0be880e0e982ac7403f163',1,'EnC::CorMemStream']]],
+  ['copymethods',['copyMethods',['../class_en_c_1_1_editor_events_1_1_project_content_copy.html#a35c1cec7d9d1fd013b4a95e198fc27c1',1,'EnC::EditorEvents::ProjectContentCopy']]],
+  ['copyparameters',['copyParameters',['../class_en_c_1_1_method_translator.html#a3d6fce80dc532170fe288d96153b95b8',1,'EnC::MethodTranslator']]],
+  ['copyto',['CopyTo',['../class_en_c_1_1_cor_mem_stream.html#a6fb5652ebb9722d810180b0b9132ecf0',1,'EnC::CorMemStream']]],
+  ['cormemstream',['CorMemStream',['../class_en_c_1_1_cor_mem_stream.html#a215ac948ba774598e8d899d0a15f08c7',1,'EnC::CorMemStream']]],
+  ['countenum',['CountEnum',['../interface_en_c_1_1_meta_data_1_1_i_meta_data_import.html#a20909ff4d01b4ad8a9845de53e56d393',1,'EnC::MetaData::IMetaDataImport']]],
+  ['createemittercopy',['createEmitterCopy',['../class_en_c_1_1_meta_data_1_1_meta_data_manager.html#a3c2ad324f01768fa65a54719cd4d8b87',1,'EnC::MetaData::MetaDataManager']]],
+  ['createerror',['createError',['../class_en_c_1_1_editor_events_1_1_source_change_validator.html#a5f5c9e46442bb3424d15bccc62e1e094',1,'EnC::EditorEvents::SourceChangeValidator']]],
+  ['createimporter',['createImporter',['../class_en_c_1_1_meta_data_1_1_meta_data_manager.html#af25c4d4f34c4f5ff7bad8311b03ad9a3',1,'EnC::MetaData::MetaDataManager']]]
+];
